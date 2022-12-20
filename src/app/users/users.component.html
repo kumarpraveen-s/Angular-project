@@ -1,0 +1,17 @@
+<h1>Users</h1>
+
+<ul class="User_list">
+  <li *ngFor="let user of users$" class="User_list__items">
+    <ul class="User_list_items_wrapper">
+      <li class="User_list__items User_list__items_name">
+        Name: {{ user.name }}
+      </li>
+      <li class="User_list__items User_list__items_email">
+        Email: {{ user.email }}
+      </li>
+      <li class="User_list__items User_list__items_userInfo">
+        <a routerLink="details/{{ user.id }}">User Info</a>
+      </li>
+    </ul>
+  </li>
+</ul>

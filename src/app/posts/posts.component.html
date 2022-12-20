@@ -1,0 +1,17 @@
+<section
+  style="
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+  "
+>
+  <div
+    *ngFor="let post of posts$"
+    style="border: 2px solid brown; width: 300px; text-align: center"
+  >
+    <h2 style="color: #467474">{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </div>
+</section>
